@@ -32,7 +32,7 @@ export class ReadyListener extends Listener {
         const title = logData.data.reportData.report.title;
         const owner = logData.data.reportData.report.owner.name;
 
-        // Get all fights that have encounterID > 0 & kill
+        // Get all fights that matter
         const fightsKills = logData.data.reportData.report.fights.filter((fight: any) => fight.encounterID > 0 && fight.kill);
         const fightsWipes = logData.data.reportData.report.fights.filter((fight: any) => fight.encounterID > 0 && !fight.kill);
         const kills = fightsKills.map((fight: any) => fight.name);

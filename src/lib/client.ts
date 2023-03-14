@@ -24,7 +24,7 @@ export class StrifeClient extends SapphireClient {
         });
 
         // Set our properties
-        this.brandColor = '#fbb81c';
+        this.brandColor = '#d14985';
         this.warcraftLogs = new WarcraftLogsClient();
     }
 }
